@@ -1,0 +1,176 @@
+.page-title {
+	margin-top: 5%;
+}
+
+.page-title-content {
+	border-bottom: 2px dashed #FFC0CB;
+}
+
+.page-data {
+	text-align : right;
+}
+
+.page-list-wrapper {
+	border : 2px solid #FFC0CB;
+	border-radius: 35px;
+	display: inline-block;
+	margin-top : 3%;
+	margin-bottom : 3%;
+	padding : 2%;
+}
+
+.page-list-content {
+	margin-bottom : 5%;
+}
+
+.page-list-title {
+	display: inline-block;
+	font-weight: bold;
+	margin-left : 1.5em;
+	width : 100%;
+}
+
+.page-list-u {
+	padding-left : 1.5em;
+}
+
+.page-list-o {
+	padding-left : 1em;
+}
+
+.page-list-u li{
+	list-style-type: disc;
+}
+
+.page-list-o li{
+	list-style-type: decimal;
+}
+
+.page-text-content {
+	padding-bottom : 5%;
+	padding-left : 5%;
+	padding-right : 5%;
+}
+
+.page-dl dt {
+	padding-top : 5%;
+}
+
+.page-dl dt:first-child {
+	padding-top : 2%;
+}
+
+.page-dl dd {
+	padding-top : 3%;
+	margin : 0;
+}
+
+.page-dl-last {
+    border-bottom: 2px dashed #FFC0CB;
+    padding-bottom: 3%;
+}
+
+.page-dl dd.page-dl-value{
+	margin-left : 5%;
+}
+
+.page-img {
+	width : 250px;
+	height : 280px;
+	margin-left : 5%;
+}
+
+.page-img-ib {
+	display : inline-block;
+}
+
+.page-img-side {
+	width : 280px;
+	height : 220px;
+}
+.page-img img{
+	width : 100%;
+	height : 100%;
+}
+
+.page-normal-pan:before {
+	content : "*";
+}
+
+.page-normal-pan {
+	color : #FFC0CB;
+}
+
+.page-normal-pan span{
+	color : #333333;
+}
+
+.page-aside {
+	text-align : center;
+}
+
+/****************/
+/* page-bottom */
+/**************/
+
+.page-btn {
+	text-align : center;
+	margin-top : 8%;
+}
+.page-pre,
+.page-home,
+.page-next {
+	display : inline-block;
+}
+
+.page-home {
+	margin-left : 2%;
+	margin-right : 2%;
+}
+
+.page-pre a,
+.page-next a{
+	position: relative;
+}
+
+.page-pre a:before,
+.page-home a:before,
+.page-next a:before {
+	content :"";
+	display : inline-block;
+	margin-top : -10px;
+	position: absolute;
+	left : 50%;
+	width : 10px;
+	height : 10px;
+}
+
+.page-home a:before{
+	background-image: url(/images/home.png);
+	background-size: contain;
+	width : 30px;
+	height : 30px;
+	margin-top : -35px;
+	margin-left : -15px;
+}
+
+.page-pre a:before {
+	border-top : 5px solid #000000;
+	border-left : 5px solid #000000;
+	-webkit-transform : translate3d(-50%,-100%,0) rotate(-45deg);
+	-ms-transform : translate3d(-50%,-100%,0) rotate(-45deg);
+	transform: translate3d(-50%,-100%,0) rotate(-45deg);
+}
+
+.page-next a:before {
+	border-top : 5px solid #000000;
+	border-left : 5px solid #000000;
+	-webkit-transform : translate3d(-50%,-100%,0) rotate(135deg);
+	-ms-transform : translate3d(-50%,-100%,0) rotate(135deg);
+	transform: translate3d(-50%,-100%,0) rotate(135deg);
+}
+
+.page-hide {
+	visibility : hidden;
+	opacity: 0;
+}
