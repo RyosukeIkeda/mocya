@@ -123,4 +123,8 @@
 		width : 230px;
 		height : 170px;
 	}
+
+	.page-ranking {
+	    width: 50%;
+	}
 }

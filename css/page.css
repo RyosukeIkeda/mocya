@@ -113,6 +113,12 @@
 	margin-top : 0;
 }
 
+.page-ranking {
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
 /****************/
 /* page-bottom */
 /**************/
