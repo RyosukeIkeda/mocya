@@ -19,6 +19,18 @@
 	padding : 2%;
 }
 
+.page4-a-list-wrapper {
+	width : 70%;
+}
+
+.page4-a-list-wrapper>ul>li{
+	margin-top: 20px;
+}
+
+.page4-a-list-wrapper>ul>li>.page-img{
+	margin-top : 10px;
+}
+
 .page-list-content {
 	margin-bottom : 5%;
 }
