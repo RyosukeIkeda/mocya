@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/********/
+/* 全体 */
+/*******/
+body {
+  background-image: url(/images/back-img.png);
+  color: #333333;
+  font-family: Shin Maru Go Regular;
+  padding: 2% 5%;
+}
+
+a {
+  color: #000000;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+dl {
+  padding-bottom: 5%;
+}
+
+.content-block-space {
+  margin-top: 5%;
+}
+
+.content-circle {
+  border-radius: 35px;
+  box-sizing: border-box;
+}
+
+.content-border-typeA {
+  border: 5px solid #ffcc99;
+}
+
+.content-border-typeB {
+  border-bottom: 2px dashed #3CA4CF;
+}
+
+.content-minus-indent {
+  text-indent: -9999px;
+}
+
+.content-backgroud-typeA {
+  background-color: #FFFFFF;
+}
+
+.content-new:before {
+  content: "new";
+  color: #FE5788;
+  font-size: 14px;
+}
+
+/***********/
+/* header */
+/*********/
+.header-wrapper {
+  background-image: url(/images/top-kv.png);
+  background-size: contain;
+  background-position: center;
+  /*height: 230px;*/
+}
+
+.header-content a {
+  display: block;
+}
+
+.header-title {
+  margin: 0;
+  padding: 3% 0;
+}
+
+.header-content,
+.header-link {
+  width: 100%;
+  height: 100%;
+}
+
+/****************/
+/* section-2th */
+/**************/
+.wrapper-2th {
+  display: inline-block;
+  width: 70%;
+}
+
+.content-title-2th {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content-list-2th {
+  padding: 5% 0;
+}
+
+.content-list-2th a {
+  display: block;
+}
+
+.content-list-2th:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  transition-duration: 0.3s;
+}
+
+.content-2th {
+  padding: 5%;
+}
+
+.content-2th li:first-child {
+  border-top: 2px dashed #3CA4CF;
+}
+
+.img-block-2th {
+  display: inline-block;
+  margin: 0 2%;
+  width: 180px;
+  height: 100px;
+}
+
+.content-block-2th {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/****************/
+/* section-3th */
+/**************/
+.wrapper-3th {
+  display: inline-block;
+  float: right;
+  margin-right: 1%;
+  width: 25%;
+}
+
+.content-list-3th {
+  padding-left: 15px;
+}
+
+.title-3th {
+  margin: 0;
+}
+
+.profile-nameA,
+.profile-nameB {
+  line-height: 70px;
+  margin-bottom: 0;
+}
+
+.profile-nameA:before,
+.profile-nameB:before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+
+.profile-nameA:before {
+  background-image: url(/images/iconA.png);
+}
+
+.profile-nameB:before {
+  background-image: url(/images/iconB.png);
+}
+
+.profile-text {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5% 0;
+  line-height: 1.7;
+}
+
+.content-back {
+  display: none;
+}
+
+/****************/
+/* fotter */
+/**************/
+.footer-wrapper {
+  clear: both;
+}
+
+.footer-copy-right {
+  text-align: center;
+}
+
+.footer-count {
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  margin-top: 5%;
+}
+
+.back-top {
+  background-color: #ffe6fa;
+  position: fixed;
+  border: 2px solid #e49758;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.back-top span {
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 100%;
+}
+
+.pc-db {
+  display: block;
+}
+
+.sp-db {
+  display: none;
+}
+
+/* カルーセル部分 */
+.carousel_wrapper {
+  /*background-color : #B4B4B4; */
+  /* 範囲確認用 */
+  display: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel_content {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 876px;
+  /* 仮 */
+}
+
+.carousel_img_visible {
+  text-align: center;
+  overflow: hidden;
+  width: 876px;
+  /*仮*/
+}
+
+.carousel_img_box {
+  width: 5000px;
+  /*並べる長さ*/
+  text-align: left;
+  position: relative;
+}
+
+.carousel_list {
+  margin-right: 10px;
+  /* 画像+隙間分 JSのMRGIN_RIGHT分*/
+}
+
+.carousel_pre:after,
+.carousel_next:after {
+  box-sizing: border-box;
+  content: '';
+  width: 26px;
+  /*ボーダー合わせたサイズ*/
+  height: 26px;
+  /*ボーダー合わせたサイズ*/
+  border-top: solid 2px #000000;
+  border-right: solid 2px #000000;
+  position: absolute;
+  top: 50%;
+  /*仮*/
+  margin-top: -13px;
+  /*画像の半分*/
+  cursor: pointer;
+}
+
+.carousel_pre:after {
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  left: -30px;
+  /*仮*/
+}
+
+.carousel_next:after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 100%;
+  /*仮*/
+}
