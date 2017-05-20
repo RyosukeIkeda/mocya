@@ -10,7 +10,7 @@ gulp.task('sass',function(){
 })
 
 gulp.task('auto',function(){
-    gulp.src('build/css/**/*.css').pipe(auto()).pipe(gulp.dest('build/css/auto'));
+    gulp.src('build/css/*.css').pipe(auto()).pipe(gulp.dest('build/css/auto'));
 })
 
 gulp.task('default',function(){
